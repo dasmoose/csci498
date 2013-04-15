@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.modelbinder/0.1.6/Backbone.ModelBinder.min.js"></script>
+    <script type="text/javascript" src="js/sqlite.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="app.js"></script>
+    <div class="row">
+      <div class="large-12 columns">
+        <form action="javascript:void(0);" id="form">
+          <fieldset>
+            <legend>New Cat Image</legend>
+              <label>Title</label>
+              <input type="text" id="title" /></br>
+              <label>Image URL</label>
+              <input type="text" id="url" />
+              <input type="hidden" id="hidden_id" value="" />
+              <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <table class="large-12">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Image</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cat_data">
+            <tr><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
